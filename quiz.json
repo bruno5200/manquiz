@@ -1,0 +1,62 @@
+{
+    "title": "¿Actúas con seguridad o por necesidad?",
+    "questions": [
+        {
+            "question": "¿Qué haces cuando una mujer te gusta?",
+            "answers": [
+                { "text": "Le escribes 'Buenos días' todos los días, aunque no te responda.", "score": 2 },
+                { "text": "La invitas a salir sin miedo, y si te dice que no, pasas la página.", "score": 0 },
+                { "text": "Te vuelves su mejor amigo con la esperanza de que un día se dé cuenta de que eres mejor que los otros hombres con los que sale.", "score": 3 }
+            ]
+        },
+        {
+            "question": "Si ella te dice que solo te ve como un amigo o hermano pequeño",
+            "answers": [
+                { "text": "Te duele pero lo aceptas y sigues con tu vida.", "score": 1 },
+                { "text": "Le dices que está bien, pero continúas actuando de la misma manera con ella.", "score": 2 },
+                { "text": "Te resientes en secreto porque consideras que siempre estuviste ahí para ella.", "score": 3 }
+            ]
+        },
+        {
+            "question": "¿Tienes metas claras en tu vida más allá de conquistar a una mujer?",
+            "answers": [
+                { "text": "Sí, y no dejo que nadie me saque de mi camino.", "score": 0 },
+                { "text": "Tengo objetivos, pero si ella me escribe, dejo todo por atenderla.", "score": 2 },
+                { "text": "Mi meta es recibir admiración y validación de esa mujer a la que no le importo.", "score": 3 }
+            ]
+        },
+        {
+            "question": "¿Te cuesta decirle que no a una mujer?",
+            "answers": [
+                { "text": "Sí, siento que si le digo que no, la perderé.", "score": 3 },
+                { "text": "A veces, pero intento marcar mis límites.", "score": 1 },
+                { "text": "No, si algo no me parece, lo digo sin miedo.", "score": 0 }
+            ]
+        },
+        {
+            "question": "¿Cómo reaccionas cuando ella empieza a salir con otra persona?",
+            "answers": [
+                { "text": "Me enojo, pero lo oculto. Sigo ahí como 'el amigo leal y confiable'.", "score": 3 },
+                { "text": "Me alejo, respeto su decisión y sigo con mi vida.", "score": 0 },
+                { "text": "Empiezo a publicar indirectas pasivo-agresivas en redes sociales.", "score": 3 }
+            ]
+        }
+    ],
+    "results": [
+        {
+            "minScore": 10,
+            "maxScore": 15,
+            "text": "Actúas desde la necesidad, no desde la seguridad. Usas la amabilidad como moneda de cambio, lo cual puede generar rechazo. Es importante que trabajes en tu autoestima y empieces a vivir para ti, no en función de la aprobación de una mujer."
+        },
+        {
+            "minScore": 5,
+            "maxScore": 9,
+            "text": "Estás en un punto intermedio. A veces actúas con seguridad, pero aún necesitas reafirmar tu carácter por encima de tus impulsos emocionales. Establece tus límites, no temas al rechazo y comprende que ser amable no te garantiza el afecto de otros."
+        },
+        {
+            "minScore": 0,
+            "maxScore": 4,
+            "text": "Eres un hombre con carácter, que es amable sin ser sumiso. Tienes tus metas claras, un rumbo definido y sabes cuándo retirarte con dignidad."
+        }
+    ]
+}
