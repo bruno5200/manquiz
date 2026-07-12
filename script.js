@@ -12,7 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     async function startQuiz() {
         try {
             const response = await fetch('quiz.json');
+            // Check for HTTP errors (e.g., 404)
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             quizData = await response.json();
+            answerButtons.addEventListener('click', handleAnswerClick);
             quizTitle.innerText = quizData.title;
             setNextQuestion();
         } catch (error) {
@@ -35,25 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
         question.answers.forEach(answer => {
             const button = document.createElement('button');
             button.innerText = answer.text;
+            button.dataset.score = answer.score;
             button.classList.add('btn');
-            button.addEventListener('click', () => selectAnswer(answer.score));
             answerButtons.appendChild(button);
         });
     }
 
     function resetState() {
-        while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild);
-        }
+        answerButtons.innerHTML = '';
     }
 
-    function selectAnswer(answerScore) {
-        score += answerScore;
+    function handleAnswerClick(event) {
+        const selectedButton = event.target.closest('.btn');
+        if (!selectedButton) return;
+
+        score += parseInt(selectedButton.dataset.score, 10);
         currentQuestionIndex++;
         setNextQuestion();
     }
 
     function showResult() {
+        answerButtons.removeEventListener('click', handleAnswerClick);
         questionContainer.classList.add('hide');
         quizTitle.classList.add('hide');
         resultContainer.classList.remove('hide');
